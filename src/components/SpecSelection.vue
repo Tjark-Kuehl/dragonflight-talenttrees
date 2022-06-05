@@ -27,42 +27,41 @@
 
 import {
   Tooltip,
-} from 'floating-vue'
+} from 'floating-vue';
 import { computed } from 'vue';
-
 
 export default {
   components: {
-      Tooltip
+    Tooltip,
   },
-  
+
   props: {
     name: {
       type: String,
-      required: true
+      required: true,
     },
     description: {
       type: String,
-      required: true
-    }, 
+      required: true,
+    },
     imageUrl: {
       type: String,
-      required: true
+      required: true,
     },
     pointsAllocated: {
       type: Number,
-      default: 0
+      default: 0,
     },
     pointsMax: {
       type: Number,
-      required: true
-    }
+      required: true,
+    },
   },
   setup(props) {
     return {
-      formattedDescription: computed(() => props.description.split(".").filter(desc => desc.length > 0))
+      formattedDescription: computed(() => props.description.split('.').filter((desc) => desc.length > 0)),
     };
   },
-}
+};
 
 </script>
