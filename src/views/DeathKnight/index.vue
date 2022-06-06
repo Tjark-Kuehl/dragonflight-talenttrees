@@ -17,6 +17,10 @@
             typeof store.allocatedPoints[talent.id] === 'undefined'
               ? 0
               : store.allocatedPoints[talent.id]"
+          :selectable="
+            typeof talent.requiredPoints === 'undefined'
+              ? true
+              : store.allocatedPointsCount >= talent.requiredPoints"
           @click="store.allocatePoint"
           @rightclick="store.unallocatePoint"
         />

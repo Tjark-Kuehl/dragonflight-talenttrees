@@ -204,6 +204,7 @@ export const talents: TalentMeta[][] = [
       name: 'Merciless Strikes',
       description: ['Increases Critical Strike chance by 2%.', 'Increases Critical Strike chance by 4%.'],
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_chargepositive.jpg',
+      requiredPoints: 8,
       pointsMax: 2,
     },
     {
@@ -214,6 +215,7 @@ export const talents: TalentMeta[][] = [
       description: `Places an Anti-Magic Zone that reduces spell damage taken by party or raid members by 20%. 
                       The Anti-Magic Zone lasts for 8 sec or until it absorbs a large amount of damage.`,
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_antimagiczone.jpg',
+      requiredPoints: 8,
       pointsMax: 1,
     },
     {
@@ -223,6 +225,7 @@ export const talents: TalentMeta[][] = [
       name: 'Might of Thassarian',
       description: ['Increases Strength chance by 2%.', 'Increases Strength chance by 4%.'],
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_chargepositive.jpg',
+      requiredPoints: 8,
       pointsMax: 2,
     },
   ],
@@ -234,6 +237,7 @@ export const talents: TalentMeta[][] = [
       name: 'Proliferating Chill',
       description: 'Chains of Ice affects 1 additional nearby enemy.',
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_frost_chainsofice.jpg',
+      requiredPoints: 8,
       pointsMax: 1,
     },
     {
@@ -245,6 +249,7 @@ export const talents: TalentMeta[][] = [
                     Runic Corruption: Each Runic Power you spend has a 1.6% chance to increase 
                     your Rune regeneration rate by 100% for 3 seconds.`,
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_chargenegative.jpg',
+      requiredPoints: 8,
       pointsMax: 1,
     },
     {
@@ -255,6 +260,7 @@ export const talents: TalentMeta[][] = [
       description: `Successfully interrupting an enemy with Mind Freeze 
                     grants 10 Runic Power and reduces its cooldown by 3 seconds.`,
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_mindfreeze.jpg',
+      requiredPoints: 8,
       pointsMax: 1,
     },
     {
@@ -265,6 +271,7 @@ export const talents: TalentMeta[][] = [
       description: `Lifts the enemy target off the ground, crushing their 
                     throat with dark energy and stunning them for 5 seconds.`,
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/ability_deathknight_asphixiate.jpg',
+      requiredPoints: 8,
       pointsMax: 1,
     },
     {
@@ -276,6 +283,7 @@ export const talents: TalentMeta[][] = [
                     normal speed, and you are immune to forced movement effects and knockbacks. 
                     Passive: You cannot be slowed below 70% of normal speed.`,
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_shadow_demonicempathy.jpg',
+      requiredPoints: 8,
       pointsMax: 1,
     },
     {
@@ -286,6 +294,7 @@ export const talents: TalentMeta[][] = [
       description: `Reduces the cooldown of Anti-Magic Shell by 20 sec and increases its 
                     duration and amount absorbed by 40%.`,
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_shadow_antimagicshell.jpg',
+      requiredPoints: 8,
       pointsMax: 1,
     },
     {
@@ -295,6 +304,7 @@ export const talents: TalentMeta[][] = [
       name: 'Control Undead',
       description: 'Dominates the target undead creature up to level 61, forcing it to do your bidding for 5 minutes.',
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/inv_misc_bone_skull_01.jpg',
+      requiredPoints: 8,
       pointsMax: 1,
     },
     {
@@ -307,6 +317,7 @@ export const talents: TalentMeta[][] = [
                     Grip of the Dead: Death and Decay reduces the movement speed of enemies within its area 
                     by 90%, decaying by 10% every seconds.`,
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_chargenegative.jpg',
+      requiredPoints: 8,
       pointsMax: 1,
     },
     {
@@ -317,6 +328,7 @@ export const talents: TalentMeta[][] = [
       description: `Your ghoul’s attacks have a chance to apply Enfeeble, reducing the 
                     target’s movement speed by 30% and the damage they deal to you by 15% for 6 seconds.`,
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_chargenegative.jpg',
+      requiredPoints: 8,
       pointsMax: 1,
     },
   ],
@@ -328,6 +340,7 @@ export const talents: TalentMeta[][] = [
       name: 'Acclimation',
       description: 'Icebound Fortitude\'s cooldown is reduced by 60 seconds.',
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_iceboundfortitude.jpg',
+      requiredPoints: 8,
       pointsMax: 1,
     },
     {
@@ -338,6 +351,7 @@ export const talents: TalentMeta[][] = [
       description: `The amount absorbed by Anti-Magic Zone is increased by 10% and 
                     grants up to 100 Runic Power based on the amount absorbed.`,
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_antimagiczone.jpg',
+      requiredPoints: 8,
       pointsMax: 1,
     },
     {
@@ -348,6 +362,7 @@ export const talents: TalentMeta[][] = [
       description: `Draw upon unholy energy to become Undead for 10 sec, increasing Leech by 10%, 
                     and making you immune to Charm, Fear, and Sleep.`,
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_shadow_raisedead.jpg',
+      requiredPoints: 8,
       pointsMax: 1,
     },
   ],
@@ -363,6 +378,7 @@ export const talents: TalentMeta[][] = [
         'Your Runic Power spending abilities increase your melee attack speed by 6% for 6 sec, stacking up to 3 times.',
       ],
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_icytalons.jpg',
+      requiredPoints: 20,
       pointsMax: 3,
     },
     {
@@ -372,6 +388,7 @@ export const talents: TalentMeta[][] = [
       name: 'Horn of Winter',
       description: 'Blow the Horn of Winter, gaining 2 Runes and generating 25 Runic Power.',
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/inv_misc_horn_02.jpg',
+      requiredPoints: 20,
       pointsMax: 1,
     },
     {
@@ -388,6 +405,7 @@ export const talents: TalentMeta[][] = [
          and 60% for Frost and Unholy specialization.`,
       ],
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_butcher2.jpg',
+      requiredPoints: 20,
       pointsMax: 3,
     },
     {
@@ -397,6 +415,7 @@ export const talents: TalentMeta[][] = [
       name: 'Will of the Necropolis',
       description: 'Damage taken below 30% Health is reduced by 30%.',
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/achievement_boss_kelthuzad_01.jpg',
+      requiredPoints: 20,
       pointsMax: 1,
     },
     {
@@ -410,6 +429,7 @@ export const talents: TalentMeta[][] = [
         'Increases the effectiveness of your Runeforge effects by 30%.',
       ],
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_chargenegative.jpg',
+      requiredPoints: 20,
       pointsMax: 3,
     },
   ],
@@ -421,6 +441,7 @@ export const talents: TalentMeta[][] = [
       name: 'Runic Attenuation',
       description: 'Auto attacks have a chance to generate 5 Runic Power.',
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/boss_odunrunes_blue.jpg',
+      requiredPoints: 20,
       pointsMax: 1,
     },
     {
@@ -430,6 +451,7 @@ export const talents: TalentMeta[][] = [
       name: 'Rune Mastery',
       description: 'Consuming a Rune has a chance to increase your Strength by 6% for 6 seconds.',
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/ability_deathknight_hungeringruneblade.jpg',
+      requiredPoints: 20,
       pointsMax: 1,
     },
     {
@@ -440,6 +462,7 @@ export const talents: TalentMeta[][] = [
       description: `When you fall below 30% health you drain health from nearby enemies. 
                     Can only occur every 3 minutes.`,
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_chargenegative.jpg',
+      requiredPoints: 20,
       pointsMax: 1,
     },
     {
@@ -449,6 +472,7 @@ export const talents: TalentMeta[][] = [
       name: 'Death\'s Echo',
       description: ' Death\'s Advance, Death and Decay, and Death Grip have 1 additional charge.',
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/inv_fabric_ebonweave.jpg',
+      requiredPoints: 20,
       pointsMax: 1,
     },
   ],
@@ -462,6 +486,7 @@ export const talents: TalentMeta[][] = [
                     Power instantly and every 5 sec for 20 seconds. If Empower Rune Weapon is not talented 
                     elsewhere on the tree, this grants 1 charge of Empower Rune Weapon.`,
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/inv_sword_62.jpg',
+      requiredPoints: 20,
       pointsMax: 1,
     },
     {
@@ -475,6 +500,7 @@ export const talents: TalentMeta[][] = [
                     The same enemy can only be pulled once every 4 seconds. 
                     Gain Runic Corruption instantly, and again every 6 seconds.`,
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/ability_maldraxxus_deathknight.jpg',
+      requiredPoints: 20,
       pointsMax: 1,
     },
     {
@@ -488,6 +514,7 @@ export const talents: TalentMeta[][] = [
                     If the enemy that yields experience or honor dies while afflicted 
                     by Soul Reaper, gain Runic Corruption.`,
       imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/ability_deathknight_soulreaper.jpg',
+      requiredPoints: 20,
       pointsMax: 1,
     },
   ],

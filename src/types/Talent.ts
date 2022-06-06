@@ -6,5 +6,6 @@ export type Talent = {
   name: string,
   description: string | string[],
   imageUrl: string,
+  requiredPoints?: number,
   pointsMax: number
 };

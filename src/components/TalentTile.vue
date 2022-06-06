@@ -20,12 +20,12 @@
       </p>
     </template>
     <button
-      class="flex relative border-yellow-500 justify-start border-2 cursor-pointer w-12"
-      :class="talentStyle"
+      class="flex relative justify-start border-2 cursor-pointer w-12"
+      :class="[tileStyle, tileTypeStyle]"
     >
       <img
         class="flex"
-        :class="[{'grayscale': !selected}, talentStyle]"
+        :class="tileTypeStyle"
         :src="talent.imageUrl"
       >
       <span class="absolute right-0.5 text-white bottom-0">{{ pointDisplay }}</span>
@@ -45,6 +45,7 @@ import { TalentType } from '@/types/TalentType';
 interface Props {
   talent: Talent,
   pointsAllocated: number,
+  selectable: boolean,
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -53,15 +54,25 @@ const props = withDefaults(defineProps<Props>(), {
 
 const emit = defineEmits(['click', 'rightclick']);
 
-const talentStyle = computed(() => {
+const tileStyle = computed(() => {
+  if (!props.selectable) {
+    return 'border-gray-500 grayscale';
+  }
+
+  if (props.talent.pointsMax === props.pointsAllocated) {
+    return 'border-yellow-500';
+  }
+
+  return 'border-green-500';
+});
+
+const tileTypeStyle = computed(() => {
   if (props.talent.type === TalentType.Improvement) {
     return 'rounded-full';
   }
 
   return 'rounded-sm';
 });
-
-const selected = computed(() => props.pointsAllocated > 0 || props.talent.pointsMax === props.pointsAllocated);
 
 const formattedDescription = computed(() => {
   let text: string;
