@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/compare/v1.0.2...v1.0.3) (2022-06-06)
+
+
+### Bug Fixes
+
+* **build:** path rewrite ([6eee63f](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/commit/6eee63fbc8ce1a2afb2c8169b3224e9d793986c0))
+
 ## [1.0.2](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/compare/v1.0.1...v1.0.2) (2022-06-06)
 
 
