@@ -1,0 +1,31 @@
+name: Setup node environment
+description: Checks out the repo, sets up cache, installs dependencies enables cancel workflow
+
+inputs:
+  node-version:
+    description: The node version to use
+    required: true
+    type: number
+
+runs:
+  using: 'composite'
+  steps:
+    - uses: styfle/cancel-workflow-action@0.9.1
+      with:
+        all_but_latest: true
+        access_token: ${{ secrets.GITHUB_TOKEN }}
+
+    - uses: actions/checkout@v3
+
+    - uses: pnpm/action-setup@v2.2.2
+      with:
+        version: 7.0.0
+
+    - uses: actions/setup-node@v3
+      with:
+        node-version: ${{ inputs.node-version }}
+        cache: 'pnpm'
+
+    - name: Install dependencies
+      shell: bash
+      run: pnpm install --frozen-lockfile --ignore-scripts
