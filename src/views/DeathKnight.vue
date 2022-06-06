@@ -135,6 +135,63 @@ const rows: Talent[][] = [
       pointsMax: 1,
     },
   ],
+  [
+    {
+      id: 12,
+      type: TalentType.Ability,
+      name: 'Blinding Sleet',
+      description: `Targets in a cone in front of you are blinded, causing them to wander disoriented for 5 seconds. 
+                    Damage may cancel the effect. When Blinding Sleet ends, enemies are slowed by 50% for 6 seconds.`,
+      imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_frost_chillingblast.jpg',
+      pointsMax: 1,
+    },
+    {
+      id: 13,
+      type: TalentType.Ability,
+      name: 'Permafrost',
+      description: 'Your auto attack damage grants you an absorb shield equal to 40% of the damage dealt.',
+      imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/achievement_zone_frostfire.jpg',
+      pointsMax: 1,
+    },
+    {
+      id: 14,
+      type: TalentType.Ability,
+      name: 'Death Pact',
+      description: `Create a death pact that heals you for 50% of your maximum health,
+                    but absorbs incoming healing equal to 30% of your max health for 15 seconds.`,
+      imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_shadow_deathpact.jpg',
+      pointsMax: 1,
+    },
+    {
+      id: 15,
+      type: TalentType.Ability,
+      name: 'Wraith Walk',
+      description: `Embrace the power of the Shadowlands, 
+                    removing all root effects and increasing your movement speed by 70% for 4 seconds. 
+                    Taking any action cancels the effect. While active, 
+                    your movement speed cannot be reduced below 170%.`,
+      imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/inv_helm_plate_raiddeathknight_p_01.jpg',
+      pointsMax: 1,
+    },
+    {
+      id: 16,
+      type: TalentType.Ability,
+      name: 'Sacrificial Pact',
+      description: `Sacrifice your ghoul to deal Shadow damage to 
+                    all nearby enemies and heal for 25% of your maximum health. 
+                    Deals reduced damage beyond 8 targets.`,
+      imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_shadow_corpseexplode.jpg',
+      pointsMax: 1,
+    },
+    {
+      id: 17,
+      type: TalentType.Ability,
+      name: 'Unholy Ground',
+      description: 'Gain 5% Haste while you remain within your Death and Decay.',
+      imageUrl: 'https://wow.zamimg.com/images/wow/icons/large/spell_chargepositive.jpg',
+      pointsMax: 1,
+    },
+  ],
 ];
 
 const allocatedPoints = reactive<Record<number, number>>({});
