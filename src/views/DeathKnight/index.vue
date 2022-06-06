@@ -13,9 +13,12 @@
         <TalentTile
           :class="talent.classes"
           :talent="talent"
-          :points-allocated="typeof allocatedPoints[talent.id] === 'undefined' ? 0 : allocatedPoints[talent.id]"
-          @click="allocatePoint"
-          @rightclick="unallocatePoint"
+          :points-allocated="
+            typeof store.allocatedPoints[talent.id] === 'undefined'
+              ? 0
+              : store.allocatedPoints[talent.id]"
+          @click="store.allocatePoint"
+          @rightclick="store.unallocatePoint"
         />
       </template>
     </div>
@@ -23,41 +26,11 @@
 </template>
 
 <script lang="ts" setup>
-import { flatten } from 'lodash-es';
-import { reactive } from 'vue';
-
 import GridBackground from '@/components/GridBackground.vue';
 import TalentTile from '@/components/TalentTile.vue';
+import { usePointsStore } from '@/stores/points';
 
 import { talents } from './talents';
 
-const allocatedPoints = reactive<Record<number, number>>({});
-
-const allocatePoint = (id: number) => {
-  if (typeof allocatedPoints[id] === 'undefined') {
-    allocatedPoints[id] = 0;
-  }
-
-  const calculatedValue = allocatedPoints[id] + 1;
-  const selectedTalent = flatten(talents).filter((talent) => talent.id === id).pop();
-
-  if (typeof selectedTalent === 'undefined' || selectedTalent.pointsMax < calculatedValue) {
-    return;
-  }
-
-  allocatedPoints[id] = calculatedValue;
-};
-
-const unallocatePoint = (id: number) => {
-  if (typeof allocatedPoints[id] === 'undefined') {
-    allocatedPoints[id] = 0;
-  }
-
-  const calculatedValue = allocatedPoints[id] - 1;
-  if (calculatedValue < 0) {
-    return;
-  }
-
-  allocatedPoints[id] = calculatedValue;
-};
+const store = usePointsStore();
 </script>

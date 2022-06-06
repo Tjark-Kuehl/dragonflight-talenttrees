@@ -1,8 +1,8 @@
 <template>
   <Tooltip
     class="w-20 select-none"
-    @click="$emit('click', talent.id)"
-    @contextmenu.prevent="$emit('rightclick', talent.id)"
+    @click="$emit('click', talent)"
+    @contextmenu.prevent="$emit('rightclick', talent)"
   >
     <template #popper>
       <p class="font-bold -mb-1">
@@ -28,7 +28,7 @@
         :class="[{'grayscale': !selected}, talentStyle]"
         :src="talent.imageUrl"
       >
-      <span class="absolute right-0.5 text-black bottom-0">{{ pointDisplay }}</span>
+      <span class="absolute right-0.5 text-white bottom-0">{{ pointDisplay }}</span>
     </button>
   </Tooltip>
 </template>
@@ -62,6 +62,7 @@ const talentStyle = computed(() => {
 });
 
 const selected = computed(() => props.pointsAllocated > 0 || props.talent.pointsMax === props.pointsAllocated);
+
 const formattedDescription = computed(() => {
   let text: string;
 
@@ -74,6 +75,7 @@ const formattedDescription = computed(() => {
 
   return text.split('.').filter((desc) => desc.length > 0);
 });
+
 const pointDisplay = computed(() => (
   props.talent.pointsMax !== 0
     ? `${props.pointsAllocated}/${props.talent.pointsMax}`
