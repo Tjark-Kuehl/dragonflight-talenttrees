@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/compare/v1.0.3...v1.1.0) (2022-06-06)
+
+
+### Features
+
+* **DeathKnight:** add missing talents ([6350b0a](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/commit/6350b0abec5931fa2e34d3befba34ca878c0de76))
+
 ## [1.0.3](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/compare/v1.0.2...v1.0.3) (2022-06-06)
 
 
