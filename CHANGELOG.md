@@ -1,3 +1,17 @@
+# [1.2.0](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/compare/v1.1.1...v1.2.0) (2022-06-06)
+
+
+### Bug Fixes
+
+* **talent:** dont emit when not selectable ([5525983](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/commit/55259836a3ce00deb5b8492a3aadbe0df148ed13))
+
+
+### Features
+
+* **header:** show allocated points ([9a780c3](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/commit/9a780c395a5bf3d7f10096e144f5fd3dd576af0e))
+* **talent:** add requiredPoints ([3edaeae](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/commit/3edaeaebc5a3ec9a54c41f42ef4e259a6ee63884))
+* useStore ([61a1080](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/commit/61a1080dee6fd94d036de73106ce41cfa0742c30))
+
 ## [1.1.1](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/compare/v1.1.0...v1.1.1) (2022-06-06)
 
 
