@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/compare/v1.0.0...v1.0.1) (2022-06-06)
+
+
+### Bug Fixes
+
+* husky hooks ([dfadcd1](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/commit/dfadcd1a88069ce8704a77b3b77b59443313184e))
+
 # 1.0.0 (2022-06-06)
 
 
