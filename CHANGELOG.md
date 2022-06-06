@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/compare/v1.0.1...v1.0.2) (2022-06-06)
+
+
+### Bug Fixes
+
+* **router:** add base url ([4796c2a](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/commit/4796c2a79ccf423e018caab83161360d4b0f06ba))
+
 ## [1.0.1](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/compare/v1.0.0...v1.0.1) (2022-06-06)
 
 
