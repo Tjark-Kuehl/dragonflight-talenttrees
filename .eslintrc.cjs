@@ -32,5 +32,11 @@ module.exports = {
         project: 'tsconfig.config.json',
       },
     },
+    {
+      files: ['*.vue'],
+      rules: {
+        '@typescript-eslint/no-unused-vars': 'off',
+      },
+    },
   ],
 };
