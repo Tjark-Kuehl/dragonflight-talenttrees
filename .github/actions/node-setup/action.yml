@@ -6,6 +6,10 @@ inputs:
     description: The node version to use
     required: true
     type: number
+  github-token:
+    description: The github token
+    required: true
+    type: string
 
 runs:
   using: 'composite'
@@ -13,7 +17,7 @@ runs:
     - uses: styfle/cancel-workflow-action@0.9.1
       with:
         all_but_latest: true
-        access_token: ${{ secrets.GITHUB_TOKEN }}
+        access_token: ${{ inputs.github-token }}
 
     - uses: actions/checkout@v3
 
