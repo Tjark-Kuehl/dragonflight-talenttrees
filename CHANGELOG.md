@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/compare/v1.1.0...v1.1.1) (2022-06-06)
+
+
+### Bug Fixes
+
+* **grid:** adjust grid background size ([f9559a0](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/commit/f9559a0f6493386cf16b38135a9e4ae848b2944f))
+
 # [1.1.0](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/compare/v1.0.3...v1.1.0) (2022-06-06)
 
 
