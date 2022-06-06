@@ -23,7 +23,7 @@ runs:
 
     - uses: pnpm/action-setup@v2.2.2
       with:
-        version: 7.0.0
+        version: 7.1.9
 
     - uses: actions/setup-node@v3
       with:

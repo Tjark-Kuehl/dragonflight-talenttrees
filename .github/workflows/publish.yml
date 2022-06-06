@@ -24,3 +24,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PRIVATE_TOKEN }}
         with:
           branch: main
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folder: dist
