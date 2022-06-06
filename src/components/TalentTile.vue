@@ -1,8 +1,8 @@
 <template>
   <Tooltip
     class="w-20 select-none"
-    @click="$emit('click', talent)"
-    @contextmenu.prevent="$emit('rightclick', talent)"
+    @click="selectable ? $emit('click', talent) : ''"
+    @contextmenu.prevent="selectable ? $emit('rightclick', talent) : ''"
   >
     <template #popper>
       <p class="font-bold -mb-1">
