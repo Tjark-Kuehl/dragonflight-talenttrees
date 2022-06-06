@@ -1,6 +1,6 @@
 <template>
   <div class="relative flex flex-col">
-    <GridBackground class="absolute left-0 right-0 top-0 bottom-0 pb-10 pl-10 pr-14" />
+    <GridBackground class="absolute left-0 right-0 top-0 bottom-0 pb-10 pl-10 pr-16" />
     <div
       v-for="(row, rowIndex) in talents"
       :key="rowIndex"
