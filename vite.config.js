@@ -5,6 +5,7 @@ import { defineConfig } from 'vite';
 // https://vitejs.dev/config/
 // eslint-disable-next-line import/no-default-export
 export default defineConfig({
+  base: `${import.meta.env.BASE_URL || ''}/`,
   plugins: [vue()],
   resolve: {
     alias: {
