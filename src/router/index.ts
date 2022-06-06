@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-import DeathKnight from '../views/DeathKnight.vue';
+import DeathKnight from '@/views/DeathKnight/index.vue';
 
 const router = createRouter({
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment

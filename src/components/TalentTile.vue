@@ -1,6 +1,6 @@
 <template>
   <Tooltip
-    class="w-16"
+    class="w-20 select-none"
     @click="$emit('click', talent.id)"
     @contextmenu.prevent="$emit('rightclick', talent.id)"
   >
