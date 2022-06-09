@@ -40,7 +40,7 @@ specifiers:
   vite: 2.9.10
   vue: 3.2.37
   vue-eslint-parser: 9.0.2
-  vue-router: 4.0.15
+  vue-router: 4.0.16
   vue-tsc: 0.35.2
 
 dependencies:
@@ -50,7 +50,7 @@ dependencies:
   pinia: 2.0.14_vcmyupim4cga7k7f5hngmth5py
   vite: 2.9.10
   vue: 3.2.37
-  vue-router: 4.0.15_vue@3.2.37
+  vue-router: 4.0.16_vue@3.2.37
 
 devDependencies:
   '@commitlint/cli': 17.0.2
@@ -4913,8 +4913,8 @@ packages:
       vue: 3.2.37
     dev: false
 
-  /vue-router/4.0.15_vue@3.2.37:
-    resolution: {integrity: sha512-xa+pIN9ZqORdIW1MkN2+d9Ui2pCM1b/UMgwYUCZOiFYHAvz/slKKBDha8DLrh5aCG/RibtrpyhKjKOZ85tYyWg==}
+  /vue-router/4.0.16_vue@3.2.37:
+    resolution: {integrity: sha512-JcO7cb8QJLBWE+DfxGUL3xUDOae/8nhM1KVdnudadTAORbuxIC/xAydC5Zr/VLHUDQi1ppuTF5/rjBGzgzrJNA==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
