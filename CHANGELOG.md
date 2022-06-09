@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/compare/v1.2.0...v1.2.1) (2022-06-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency vue-router to v4.0.16 ([a10dfcf](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/commit/a10dfcf1497c1837ee5788b245de9edc772b4390))
+
 # [1.2.0](https://github.com/Tjark-Kuehl/dragonflight-talenttrees/compare/v1.1.1...v1.2.0) (2022-06-06)
 
 
