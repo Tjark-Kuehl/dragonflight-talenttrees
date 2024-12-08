@@ -21,7 +21,7 @@ runs:
 
     - uses: actions/checkout@v3
 
-    - uses: pnpm/action-setup@v2.2.2
+    - uses: pnpm/action-setup@v2.4.1
       with:
         version: 7.1.9
 
