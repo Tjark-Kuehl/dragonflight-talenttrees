@@ -29,7 +29,7 @@ specifiers:
   eslint-plugin-unicorn: 40.1.0
   eslint-plugin-vue: 8.7.1
   floating-vue: 2.0.0-beta.17
-  husky: 8.0.1
+  husky: 8.0.3
   lint-staged: 13.0.1
   npm-run-all: 4.1.5
   pinia: 2.0.14
@@ -67,7 +67,7 @@ devDependencies:
   eslint: 8.17.0
   eslint-config-airbnb-base: 15.0.0_3yxiwxzsqipdmy4jwrlv6vgfmy
   eslint-config-airbnb-typescript: 16.2.0_tp6b2m7mjearuulyvjl6n6zeka
-  eslint-config-liebe: 2.1.2_typescript@4.7.3
+  eslint-config-liebe: 2.1.2_4ogoqmsf3yns3moji7byx3cyvq
   eslint-import-resolver-typescript: 2.7.1_3yxiwxzsqipdmy4jwrlv6vgfmy
   eslint-plugin-eslint-comments: 3.2.0_eslint@8.17.0
   eslint-plugin-import: 2.26.0_xzp3xuu5l2v5skncvl5a2je5s4
@@ -78,12 +78,12 @@ devDependencies:
   eslint-plugin-sonarjs: 0.11.0_eslint@8.17.0
   eslint-plugin-unicorn: 40.1.0_eslint@8.17.0
   eslint-plugin-vue: 8.7.1_eslint@8.17.0
-  husky: 8.0.1
+  husky: 8.0.3
   lint-staged: 13.0.1
   npm-run-all: 4.1.5
   postcss: 8.4.14
   semantic-release: 19.0.3
-  tailwindcss: 3.1.0
+  tailwindcss: 3.1.0_postcss@8.4.14
   typescript: 4.7.3
   vue-eslint-parser: 9.0.2_eslint@8.17.0
   vue-tsc: 0.37.3_typescript@4.7.3
@@ -1508,8 +1508,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      is-text-path: 1.0.1
       JSONStream: 1.3.5
+      is-text-path: 1.0.1
       lodash: 4.17.21
       meow: 8.1.2
       split2: 3.2.2
@@ -2066,30 +2066,30 @@ packages:
       eslint-plugin-import: 2.26.0_xzp3xuu5l2v5skncvl5a2je5s4
     dev: true
 
-  /eslint-config-airbnb-typescript/17.0.0_tp6b2m7mjearuulyvjl6n6zeka:
-    resolution: {integrity: sha512-elNiuzD0kPAPTXjFWg+lE24nMdHMtuxgYoD30OyMD6yrW1AhFZPAg27VX7d3tzOErw+dgJTNWfRSDqEcXb4V0g==}
-    peerDependencies:
-      '@typescript-eslint/eslint-plugin': ^5.13.0
-      '@typescript-eslint/parser': ^5.0.0
-      eslint: ^7.32.0 || ^8.2.0
-      eslint-plugin-import: ^2.25.3
-    dependencies:
-      '@typescript-eslint/eslint-plugin': 5.27.1_aq7uryhocdbvbqum33pitcm3y4
-      '@typescript-eslint/parser': 5.27.1_ud6rd4xtew5bv4yhvkvu24pzm4
-      eslint: 8.17.0
-      eslint-config-airbnb-base: 15.0.0_3yxiwxzsqipdmy4jwrlv6vgfmy
-      eslint-plugin-import: 2.26.0_xzp3xuu5l2v5skncvl5a2je5s4
-    dev: true
-
-  /eslint-config-liebe/2.1.2_typescript@4.7.3:
+  /eslint-config-liebe/2.1.2_4ogoqmsf3yns3moji7byx3cyvq:
     resolution: {integrity: sha512-L1Oz6ScTws+tozHMtoCtI6PZIikhKQsU72ESJr34MVsDsdubd83jqR5fB5dsbXH5Djvi2VNwtx1Qb8frWgZAlw==}
     engines: {node: ^14 || >=16}
+    peerDependencies:
+      '@typescript-eslint/eslint-plugin': ^5.25.0
+      '@typescript-eslint/parser': ^5.25.0
+      eslint: ^8
+      eslint-config-airbnb-base: ^15.0.0
+      eslint-config-airbnb-typescript: ^16.2.0
+      eslint-import-resolver-typescript: ^2.7.1
+      eslint-plugin-eslint-comments: ^3.2.0
+      eslint-plugin-import: ^2.26.0
+      eslint-plugin-jest: ^26.2.2
+      eslint-plugin-json: ^3.1.0
+      eslint-plugin-promise: ^6.0.0
+      eslint-plugin-simple-import-sort: ^7.0.0
+      eslint-plugin-sonarjs: ^0.11.0
+      eslint-plugin-unicorn: ^40.1.0
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.27.1_aq7uryhocdbvbqum33pitcm3y4
       '@typescript-eslint/parser': 5.27.1_ud6rd4xtew5bv4yhvkvu24pzm4
       eslint: 8.17.0
       eslint-config-airbnb-base: 15.0.0_3yxiwxzsqipdmy4jwrlv6vgfmy
-      eslint-config-airbnb-typescript: 17.0.0_tp6b2m7mjearuulyvjl6n6zeka
+      eslint-config-airbnb-typescript: 16.2.0_tp6b2m7mjearuulyvjl6n6zeka
       eslint-import-resolver-typescript: 2.7.1_3yxiwxzsqipdmy4jwrlv6vgfmy
       eslint-plugin-eslint-comments: 3.2.0_eslint@8.17.0
       eslint-plugin-import: 2.26.0_xzp3xuu5l2v5skncvl5a2je5s4
@@ -2099,11 +2099,6 @@ packages:
       eslint-plugin-simple-import-sort: 7.0.0_eslint@8.17.0
       eslint-plugin-sonarjs: 0.11.0_eslint@8.17.0
       eslint-plugin-unicorn: 40.1.0_eslint@8.17.0
-    transitivePeerDependencies:
-      - eslint-import-resolver-webpack
-      - jest
-      - supports-color
-      - typescript
     dev: true
 
   /eslint-import-resolver-node/0.3.6:
@@ -2836,8 +2831,8 @@ packages:
     engines: {node: '>=12.20.0'}
     dev: true
 
-  /husky/8.0.1:
-    resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==}
+  /husky/8.0.3:
+    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
@@ -4560,10 +4555,12 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  /tailwindcss/3.1.0:
+  /tailwindcss/3.1.0_postcss@8.4.14:
     resolution: {integrity: sha512-XzXq31Fj6RizhlFVNLBlDqzs0dXuIEOAknuOcKx2R/IIQbEz5DnngslYY4JNN6e9JkNBjHGm1w2XDABsADg1ng==}
     engines: {node: '>=12.13.0'}
     hasBin: true
+    peerDependencies:
+      postcss: ^8.0.9
     dependencies:
       arg: 5.0.2
       chokidar: 3.5.3
